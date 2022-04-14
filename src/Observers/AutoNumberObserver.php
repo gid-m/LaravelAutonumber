@@ -1,8 +1,8 @@
 <?php
 
-namespace Alfa6661\AutoNumber\Observers;
+namespace Gid\AutoNumber\Observers;
 
-use Alfa6661\AutoNumber\AutoNumber;
+use Gid\AutoNumber\AutoNumber;
 use Illuminate\Database\Eloquent\Model;
 
 class AutoNumberObserver
@@ -23,7 +23,7 @@ class AutoNumberObserver
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model $model
+     * @param Model $model
      * @return null
      */
     public function saving(Model $model)

@@ -1,27 +1,27 @@
 {
-    "name": "alfa6661/laravel-autonumber",
+    "name": "gid-m/laravel-autonumber",
     "description": "Laravel package to create autonumber for Eloquent model",
     "keywords": [
         "laravel",
         "eloquent",
         "autonumber"
     ],
-    "homepage": "https://github.com/alfa6661/laravel-autonumber",
+    "homepage": "https://github.com/gid-m/LaravelAutonumber",
     "license": "MIT",
     "authors": [
         {
-            "name": "Alfa Adhitya",
-            "email": "alfa2159@gmail.com"
+            "name": "Gid3on M",
+            "email": "mu.giddy@gmail.com"
         }
     ],
     "require": {
-        "illuminate/config": "^5.1|^6.0|^7.0|^8.0",
-        "illuminate/database": "^5.1|^6.0|^7.0|^8.0",
-        "illuminate/support": "^5.1|^6.0|^7.0|^8.0"
+        "illuminate/config": "^5.1|^6.0|^7.0|^8.0|^9.0",
+        "illuminate/database": "^5.1|^6.0|^7.0|^8.0|^9.0",
+        "illuminate/support": "^5.1|^6.0|^7.0|^8.0|^9.0"
     },
     "autoload": {
         "psr-4": {
-            "Alfa6661\\AutoNumber\\": "src"
+            "Gid\\AutoNumber\\": "src"
         }
     },
     "minimum-stability": "dev",
@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Alfa6661\\AutoNumber\\AutoNumberServiceProvider"
+                "Gid\\AutoNumber\\AutoNumberServiceProvider"
             ]
         }
     }

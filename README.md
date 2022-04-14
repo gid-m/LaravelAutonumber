@@ -1,9 +1,9 @@
 # Laravel AutoNumber
 
-[![Latest Stable Version](https://poser.pugx.org/alfa6661/laravel-autonumber/v/stable)](https://packagist.org/packages/alfa6661/laravel-autonumber)
-[![Total Downloads](https://poser.pugx.org/alfa6661/laravel-autonumber/downloads)](https://packagist.org/packages/alfa6661/laravel-autonumber)
+[![Latest Stable Version](https://poser.pugx.org/gid/laravel-autonumber/v/stable)](https://packagist.org/packages/gid/laravel-autonumber)
+[![Total Downloads](https://poser.pugx.org/gid/laravel-autonumber/downloads)](https://packagist.org/packages/gid/laravel-autonumber)
 [![StyleCI](https://styleci.io/repos/99206904/shield)](https://styleci.io/repos/99206904)
-[![License](https://poser.pugx.org/alfa6661/laravel-autonumber/license)](https://packagist.org/packages/alfa6661/laravel-autonumber)
+[![License](https://poser.pugx.org/gid/laravel-autonumber/license)](https://packagist.org/packages/gid/laravel-autonumber)
 
 
 Laravel package to create autonumber for Eloquent model
@@ -13,7 +13,7 @@ Laravel package to create autonumber for Eloquent model
 You can install the package via composer:
 
 ```
-composer require alfa6661/laravel-autonumber
+composer require gid/laravel-autonumber
 ```
 
 Register the ServiceProvider in `config/app.php`
@@ -21,14 +21,14 @@ Register the ServiceProvider in `config/app.php`
 ```php
 'providers' => [
     // ...
-    Alfa6661\AutoNumber\AutoNumberServiceProvider::class,
+    Gid\AutoNumber\AutoNumberServiceProvider::class,
 ],
 ```
 
 Publish the default configuration
 
 ```
-php artisan vendor:publish --provider='Alfa6661\AutoNumber\AutoNumberServiceProvider'
+php artisan vendor:publish --provider='Gid\AutoNumber\AutoNumberServiceProvider'
 ```
 
 Running migration
@@ -39,13 +39,13 @@ php artisan migrate
 
 # Usage
 
-Your Eloquent models should use the `Alfa6661\AutoNumber\AutoNumberTrait` trait
+Your Eloquent models should use the `Gid\AutoNumber\AutoNumberTrait` trait
 
 The trait contains an abstract method `getAutoNumberOptions()` that you must implement yourself.
 
 
 ```php
-use Alfa6661\AutoNumber\AutoNumberTrait;
+use Gid\AutoNumber\AutoNumberTrait;
     
 class Order extends Model
 {

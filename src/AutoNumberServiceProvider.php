@@ -1,8 +1,8 @@
 <?php
 
-namespace Alfa6661\AutoNumber;
+namespace Gid\AutoNumber;
 
-use Alfa6661\AutoNumber\Observers\AutoNumberObserver;
+use Gid\AutoNumber\Observers\AutoNumberObserver;
 use Illuminate\Support\ServiceProvider;
 
 class AutoNumberServiceProvider extends ServiceProvider
